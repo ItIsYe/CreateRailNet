@@ -1,0 +1,19 @@
+return {
+  role = "display",          -- "master", "station", "signal", "display", "sensor", "pa"
+  label = "Display-A-01",     -- ComputerLabel
+  options = {
+    stationKey = "A",        -- Für display/station/pa
+    hwId = "SIG-A1",        -- Für signal (Beispiel)
+    mode = "redstone",       -- Für signal: "redstone" oder "periph"
+    side = "right",          -- Redstone-Seite
+    periph = nil             -- Peripherie-Name bei mode="periph"
+  },
+  net = {
+    namespace = "CreateRailNet",
+    app_id    = 27182,
+    proto     = "crn.v1",
+    topic     = "crn/v1/CreateRailNet"
+  },
+  transports = { capella=true, rednet=true, wired=true },
+  netmon = { hb_interval_sec=30 }
+}
