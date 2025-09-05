@@ -1,1 +1,0 @@
--- Slave Sensor stub

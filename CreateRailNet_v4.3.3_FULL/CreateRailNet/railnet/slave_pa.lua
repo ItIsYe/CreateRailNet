@@ -1,1 +1,0 @@
--- Slave PA stub
